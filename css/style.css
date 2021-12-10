@@ -1,330 +1,356 @@
-            /*Basic Styling*/
-            
-            body {
-                margin: 0px;
-                padding: 0;
-                box-sizing: border-box;
-                font-size: 20pt;
-                font-family: 'Comic Sans', 'Arial', sans-serif;
-                background-color: rgb(255, 255, 255);
-            }
-            
-            header {
-                background: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                align-items: right;
-                padding-bottom: 10px;
-                padding-top: 10px;
-            }
-            
-            .container {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto auto auto auto;
-                grid-row-gap: 20px;
-                justify-content: center;
-                align-content: center;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                margin-right: 5%;
-                margin-left: 5%;
-            }
-            
-            .clothing_text,
-            .clothing_pic {
-                grid-column: 1 / span 2;
-                overflow: hidden;
-                max-height: 900px;
-            }
-            
-            .clothing_text {
-                background: rgba(160, 159, 156, 0.548);
-                border: 8px solid black;
-                text-align: center;
-            }
-            
-            .food_text {
-                background: rgba(115, 190, 112, 0.918);
-                border: 8px solid black;
-                text-align: center;
-                margin-left: 5%;
-                margin-right: 5%;
-            }
-            
-            .food-header {
-                grid-column: 1 / -1;
-                padding-bottom: 20px;
-            }
-            
-            .survey-header {
-                grid-column: 1 / -1;
-            }
-            
-            h1 {
-                font-size: 30px;
-                line-height: 1;
-                padding-top: 10px;
-                text-align: center;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-            
-            p {
-                padding-left: 10px;
-            }
-            
-            nav {
-                text-align: right;
-            }
-            
-            .navbar {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                background-color: #000000;
-            }
-            
-            .links ul {
-                margin: 0;
-                padding: 0;
-                display: flex;
-                color: #ffffff;
-            }
-            
-            .links li {
-                list-style: none;
-            }
-            
-            .links li a {
-                text-decoration: none;
-                color: white;
-                padding: 1rem;
-                display: block;
-            }
-            
-            .links li:hover {
-                text-decoration: underline;
-                border: 2px solid white;
-            }
-            
-            .navbar a:hover {
-                text-decoration: underline;
-            }
-            
-            .navbar .current {
-                background-color: #ffffff;
-                color: #000000;
-                border: 2px solid #000000;
-                text-decoration: overline;
-            }
-            
-            footer {
-                text-align: center;
-                border: 2px solid black;
-                margin: 20px 0;
-                margin-top: auto;
-            }
-            
-            .button {
-                margin: auto;
-                width: 50%;
-                background-color: #5986a0;
-                padding: 14px 28px;
-                text-align: center;
-                font-size: 16px;
-                border-radius: 8px;
-                justify-content: center;
-                box-shadow: 0 4px 4px;
-                text-decoration: none;
-                color: #ffffff;
-            }
-            
-            @keyframes fade {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-            /*Navigation and the nav element*/
-            
-            #Chicagoincolor,
-            #origin,
-            #food,
-            #clothing,
-            #contact {
-                text-decoration: underline;
-                font-weight: bold;
-            }
-            
-            .navbar-links {
-                display: list-item;
-            }
-            
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .navbar ul {
-                flex-direction: column;
-                width: 100%;
-            }
-            
-            .navbar {
-                grid-column: 1 / -1;
-            }
-            
-            .grid {
-                display: grid;
-                grid-template-columns: 1fr 2fr;
-            }
-            /*Buttons for home page*/
-            
-            .buttons {
-                padding: 10px;
-            }
-            
-            .buttons button.play:before {
-                content: "\f144";
-            }
-            
-            .buttons button.pause:before {
-                content: "\f28b";
-            }
-            /*Skip to main content*/
-            
-            .skip a {
-                background: white;
-                left: 0;
-                padding: 5px;
-                -webkit-transition: top 1s ease-out;
-                transition: top 1s ease-out;
-                z-index: 1;
-                position: absolute;
-                top: -50px;
-            }
-            
-            .skip a:focus {
-                position: absolute;
-                top: 0px;
-            }
-            /*Survey Form Styling*/
-            
-            .container .flip-card,
-            .container .form_container {
-                grid-column: 1 / span 2;
-                place-self: center;
-            }
-            
-            input[type=text],
-            select,
-            textarea {
-                width: 100%;
-                padding: 12px;
-                border: 1px solid rgb(172, 171, 171);
-                border-radius: 4px;
-                box-sizing: border-box;
-                margin-top: 6px;
-                margin-bottom: 16px;
-                resize: vertical;
-            }
-            
-            input[type=submit] {
-                background-color: #000000;
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-            
-            input[type=submit]:hover {
-                background-color: #45a049;
-            }
-            
-            .contact_container {
-                border-radius: 5px;
-                background-color: #a4b0c2cc;
-                padding: 20px;
-                margin-left: 10%;
-                margin-right: 10%;
-                margin-bottom: 10px;
-            }
-            
-            .contact-text {
-                padding-left: 80px;
-                padding-right: 80px;
-                padding-bottom: 30px;
-            }
-            /*Flip Card Styling*/
-            
-            .flip-card {
-                background-color: transparent;
-                width: 200px;
-                height: 160px;
-                border: 1px solid #f3efef;
-                perspective: 1000px;
-                border-radius: 10px;
-                margin-top: 30px;
-                grid-row: 2 /3;
-            }
-            
-            .flip-card-inner {
-                /* display: flex;
+                    /*Basic Styling*/
+                    
+                    body {
+                        margin: 0px;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-size: 20pt;
+                        font-family: 'Comic Sans', 'Arial', sans-serif;
+                        background-color: rgb(255, 255, 255);
+                    }
+                    
+                    header {
+                        background: rgb(0, 0, 0);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: right;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                    }
+                    
+                    .container {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: auto auto auto auto;
+                        grid-row-gap: 20px;
+                        justify-content: center;
+                        align-content: center;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-right: 5%;
+                        margin-left: 5%;
+                    }
+                    
+                    .clothing_text,
+                    .clothing_pic {
+                        grid-column: 1 / span 2;
+                        overflow: hidden;
+                        max-height: 900px;
+                    }
+                    
+                    .clothing_text {
+                        background: rgba(156, 159, 156, 0.554);
+                        border: 8px solid black;
+                        text-align: center;
+                    }
+                    
+                    .food_text {
+                        background: rgba(237, 173, 156);
+                        border: 8px solid black;
+                        text-align: center;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
+                    
+                    .food-header {
+                        grid-column: 1 / -1;
+                        padding-bottom: 20px;
+                    }
+                    
+                    .survey-header {
+                        grid-column: 1 / -1;
+                    }
+                    
+                    h1 {
+                        font-size: 30px;
+                        line-height: 1;
+                        padding-top: 10px;
+                        text-align: center;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    
+                    p {
+                        padding-left: 10px;
+                    }
+                    
+                    nav {
+                        text-align: right;
+                    }
+                    
+                    .navbar {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        background-color: #000000;
+                    }
+                    
+                    .links ul {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        color: #ffffff;
+                    }
+                    
+                    .links li {
+                        list-style: none;
+                    }
+                    
+                    .links li a {
+                        text-decoration: none;
+                        color: white;
+                        padding: 1rem;
+                        display: block;
+                    }
+                    
+                    .links li:hover {
+                        text-decoration: underline;
+                        border: 2px solid white;
+                    }
+                    
+                    .navbar a:hover {
+                        text-decoration: underline;
+                    }
+                    
+                    .navbar .current {
+                        background-color: #ffffff;
+                        color: #000000;
+                        border: 2px solid #000000;
+                        text-decoration: overline;
+                    }
+                    
+                    footer {
+                        text-align: center;
+                        border: 2px solid black;
+                        margin: 20px 0;
+                        margin-top: auto;
+                    }
+                    
+                    .button {
+                        margin: auto;
+                        width: 50%;
+                        background-color: #5d8fac;
+                        padding: 14px 28px;
+                        text-align: center;
+                        font-size: 16px;
+                        border-radius: 8px;
+                        justify-content: center;
+                        box-shadow: 0 4px 4px;
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                    
+                    @keyframes fade {
+                        from {
+                            opacity: 0;
+                        }
+                        to {
+                            opacity: 1;
+                        }
+                    }
+                    /*Navigation and the nav element*/
+                    
+                    #Chicagoincolor,
+                    #origin,
+                    #food,
+                    #clothing,
+                    #contact {
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                    
+                    .navbar-links {
+                        display: list-item;
+                    }
+                    
+                    .navbar {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    
+                    .navbar ul {
+                        flex-direction: column;
+                        width: 100%;
+                    }
+                    
+                    .navbar {
+                        grid-column: 1 / -1;
+                    }
+                    
+                    .grid {
+                        display: grid;
+                        grid-template-columns: 1fr 2fr;
+                    }
+                    /*Buttons for home page*/
+                    
+                    .buttons {
+                        padding: 10px;
+                    }
+                    
+                    .buttons button.play:before {
+                        content: "\f144";
+                    }
+                    
+                    .buttons button.pause:before {
+                        content: "\f28b";
+                    }
+                    /*Skip to main content*/
+                    
+                    .skip a {
+                        display: block;
+                        background: white;
+                        left: 0;
+                        padding: 5px;
+                        -webkit-transition: top 1s ease-out;
+                        transition: top 1s ease-out;
+                        z-index: 1;
+                        position: absolute;
+                        top: -40px;
+                    }
+                    
+                    .skip a:focus {
+                        position: absolute;
+                        top: 0;
+                    }
+                    /*Survey Form Styling*/
+                    
+                    .container .flip-card,
+                    .container .form_container {
+                        grid-column: 1 / span 2;
+                        place-self: center;
+                    }
+                    
+                    input[type=text],
+                    select,
+                    textarea {
+                        width: 100%;
+                        padding: 12px;
+                        border: 1px solid rgb(172, 171, 171);
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        margin-top: 6px;
+                        margin-bottom: 16px;
+                        resize: vertical;
+                    }
+                    
+                    input[type=submit] {
+                        background-color: #000000;
+                        color: white;
+                        padding: 12px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    
+                    input[type=submit]:hover {
+                        background-color: #45a049;
+                    }
+                    
+                    .contact_container {
+                        border-radius: 5px;
+                        background-color: #a4b0c2cc;
+                        padding: 20px;
+                        margin-left: 10%;
+                        margin-right: 10%;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .contact-text {
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        padding-bottom: 30px;
+                    }
+                    /*Flip Card Styling*/
+                    
+                    .flip-card {
+                        background-color: transparent;
+                        width: 200px;
+                        height: 160px;
+                        border: 1px solid #f3efef;
+                        perspective: 1000px;
+                        border-radius: 10px;
+                        margin-top: 30px;
+                        grid-row: 2 /3;
+                    }
+                    
+                    .flip-card-inner {
+                        /* display: flex;
                 position: relative; */
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                transition: transform 0.8s;
-                transform-style: preserve-3d;
-                border-radius: 10px;
-            }
-            
-            .flip-card:hover .flip-card-inner,
-            .flip-card:focus-within .flip-card-inner,
-            .flip-card:focus .flip-card-inner {
-                transform: rotateY(180deg);
-            }
-            
-            .flip-card-front,
-            .flip-card-back {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                -webkit-backface-visibility: hidden;
-                /* Safari */
-                backface-visibility: hidden;
-            }
-            
-            .flip-card-front {
-                border-radius: 10px;
-                background-color: rgb(0, 0, 0);
-            }
-            
-            .flip-card-back {
-                background-color: #ffffffcc;
-                color: rgb(0, 0, 0);
-                border-radius: 10px;
-                transform: rotateY(180deg);
-            }
-            /* .flip-card-back p {
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        transition: transform 0.8s;
+                        transform-style: preserve-3d;
+                        border-radius: 10px;
+                    }
+                    
+                    .flip-card:hover .flip-card-inner,
+                    .flip-card:focus-within .flip-card-inner,
+                    .flip-card:focus .flip-card-inner {
+                        transform: rotateY(180deg);
+                    }
+                    
+                    .flip-card-front,
+                    .flip-card-back {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        -webkit-backface-visibility: hidden;
+                        /* Safari */
+                        backface-visibility: hidden;
+                    }
+                    
+                    .flip-card-front {
+                        border-radius: 10px;
+                        background-color: rgb(0, 0, 0);
+                    }
+                    
+                    .flip-card-back {
+                        background-color: #ffffffcc;
+                        color: rgb(0, 0, 0);
+                        border-radius: 10px;
+                        transform: rotateY(180deg);
+                    }
+                    /* .flip-card-back p {
                 font-size: 1.5rem;
             }
             
             .flip-card-back h1 {
                 font-size: 2rem;
             } */
-            /*Responsive Design*/
-            /* Reduced Motion Query*/
-            
-            @media screen and (prefers-reduced-motion) {
-                .logo {
-                    animation: none;
-                }
-            }
+                    /*Responsive Design*/
+                    /* Reduced Motion Query*/
+                    
+                    @media screen and (min-width: 750px) {
+                        .grid {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                        }
+                        .navbar {
+                            grid-column: 1 / -1;
+                        }
+                        @media screen and (min-width: 1025px) {
+                            .navbar {
+                                background-color: #000000;
+                            }
+                            .links ul {
+                                flex-direction: row;
+                                font-size: 20px;
+                            }
+                            .img-section img {
+                                height: 10%;
+                            }
+                        }
+                        .grid {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                        }
+                        @media screen and (prefers-reduced-motion) {
+                            .logo {
+                                animation: none;
+                            }
+                        }
+                    }
