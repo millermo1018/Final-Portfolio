@@ -4,10 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/3-chicago-skyline-fraser-hall.jpg">
     <title>Shopping in Chicago</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWMTQ66N98"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FWMTQ66N98');
+    </script>
+    </script>
 </head>
 
 <body>
@@ -16,7 +29,7 @@
         <nav class="navbar">
             <div class="links">
                 <ul>
-                    <li><a href="index.html">Meet the Founder</a></li>
+                    <li><a href="index.html">Chicago in Color</a></li>
                     <li><a href="Origin.html">Origin</a></li>
                     <li><a href="food.html">Food</a></li>
                     <li><a class="current" href="clothing.html">Clothing</a></li>
@@ -26,12 +39,106 @@
         </nav>
     </header>
     <br>
+    <main>
+        <h1 id="main">Clothing</h1>
+        <div class="container">
+
+            <div class="clothing_text">
+                <p>In addition to being known for our good eats, Chicago is also known for its fashion sense. Read below to explore some of my favorite black own clothing brands in the Chicago area.
+                </p>
+            </div>
+
+            <div class="clothing_pic">
+                <img src="images/englewood.png" alt="Logo for Englewood branded." />
+                <!-- <img src="https://cdn.shopify.com/s/files/1/0289/0799/5269/products/EDUBGoldTee_1080x.png?v=1633677459" alt="T-shirt from Englewood branded." /> -->
+            </div>
+
+            <div class="clothing_text">
+                <p>
+                    Englewood Branded is a streetwear clothing brand that is based on the Southside of Chicago in the Englewood area. “Englewood Branded” story began on Black Friday of 2017. It was initially intended to be a popup shop, but quickly turned into a store opening
+                    as customers found themselves wanting more. Be sure to check out the clothing store at 1546 W. 63rd Street. </p>
+            </div>
+
+            <div class="clothing_pic">
+                <img src="https://cdn.shopify.com/s/files/1/3001/0192/files/logo_464891f6-84c1-4d14-9d1a-6599aecb6e98.png?v=1616379569" alt="Kiwi's Boutique Logo." />
+                <!-- <img src="https://postscript-mms-files.s3.amazonaws.com/1LEK6z-3k6k8TawxGqor70nml9v9Q.png" alt="Clothes from Kiwi’s Boutique" /> -->
+            </div>
+
+            <div class="clothing_text">
+                <p> Kiwi’s Boutique is a women’s clthoing store that provides an elite clientele with on trend, on style and on budget selections. It is located in the UIC District of Chicago and they carry the latest trends & chic wear complimented with
+                    a comfortable, cozy environment, which creates a unique shopping experience. Stop in and see them at 1015 S Western Ave #1, Chicago, IL 60612. </p>
+            </div>
+
+            <div class="clothing_pic">
+                <img src="data:image/png;base64,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"
+                    alt="Kim Products Logo." />
+                <!-- <img src="https://pbs.twimg.com/media/FFerbddXwAQaXJV?format=jpg&name=medium" alt="Chicago creates legends hoodie" /> -->
+
+            </div>
+
+            <div class="clothing_text">
+                <p>Kim Products is a black woman owned small business that specializes in streetwear. The business is most known for their "Chicago Creates Legends" hoodies! </p>
+            </div>
+
+            <div class="clothing_pic">
+                <img src="images/jfg.png" alt="Joe Fresh Goods logo." />
+            </div>
+
+            <div class="clothing_text">
+                <p>Joe Fresh Goods is a designer and creative director from the West Side of Chicago. He uses a unique blend of brand narrative, historical, and cultural references, which allow him to create authenic connections with streetwear lovers all
+                    over the world.
+                </p>
+            </div>
+
+            <div class="clothing_pic">
+                <img src="https://images.squarespace-cdn.com/content/v1/51b4ea74e4b00dfc8086871e/1584145521717-FAZDUXMF3HBJEEMZHY2P/coe-new-logo.png?format=1500w" alt="Chicago over everything logo." />
+            </div>
+
+            <div class="clothing_text">
+                <p>Chicago Over everything is a clothing collection that directly pays homage to Chicago and has received support from some key figures in Chicago's youth rap movement. This local pop up shop has embraced that Chicago is full of insanely
+                    loyal people and they place an emphasis on advancing homegrown Chicago artistry and talent.
+                </p>
+            </div>
+
+            <div class="clothing_pic">
+                <img src="https://assets.bigcartel.com/theme_images/37780609/VegasGoldDJA.PNG?auto=format&fit=max&h=100&w=400" alt="designer junkie logo" />
+            </div>
+
+            <div class="clothing_text">
+                <p> Designer Junkie Apparel is known as the Hottest street wear brand in Chicago which is Located at 1977 E 73rd St. You can also check out the brand online.
+                </p>
+            </div>
+
+            <div class="clothing_pic">
+                <img src="https://cdn.shoplightspeed.com/shops/618794/themes/13126/assets/logo.png?20210721181903" alt="Belle up logo." />
+            </div>
+
+            <div class="clothing_text">
+                <p>Bellē Up is a Black-owned women's apparel, accessories and gift boutique located in Chicago's Beverly neighborhood.
+                </p>
+            </div>
+
+            <div class="clothing_pic">
+                <img src="https://images.squarespace-cdn.com/content/v1/52ed60cae4b0be9c62d5ce9d/1499649355651-P5QGFU7D2QRTKTBUAHVH/ftw-header.png?format=1500w" alt="The shop 147 logo." />
+            </div>
+
+            <div class="clothing_text">
+                <p>Fat Tiger Works is a streetwear retail destination and creative hub based in Chicago.
+                </p>
+            </div>
+
+            <div class="clothing_pic">
+                <img src="https://cdn.shopify.com/s/files/1/0093/1407/4687/files/The-Shop-147-Website-Logo-200x60-black_741b1e86-bfb4-4073-a794-3499ffb9b155_250x@2x.png?v=1563853729" alt="Fat Tiger Works logo." />
+            </div>
+
+            <div class="clothing_text">
+                <p>The Shop 147 is a Chicago, Illinois based retail store that carries brands like Mursaki Denim, Puma, Nike, Fashion Geek, Psycho Bunny, EPTM, Jordan..
+                </p>
+            </div>
 
 
-
-
-
-
+        </div>
+    </main>
 
     <footer>
         <p>University of Michigan School of Information <br/> &copy; Morgan Miller, Chicago In Color - Web Design Portfolio 2021</p>

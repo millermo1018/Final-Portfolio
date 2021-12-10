@@ -3,13 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/3-chicago-skyline-fraser-hall.jpg">
 
     <title>Feedback Form</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWMTQ66N98"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FWMTQ66N98');
+    </script>
+    </script>
 </head>
 
 <body>
@@ -18,7 +31,7 @@
         <nav class="navbar">
             <div class="links">
                 <ul>
-                    <li><a href="index.html">Meet the Founder</a></li>
+                    <li><a href="index.html">Chicago in Color</a></li>
                     <li><a href="Origin.html">Origin</a></li>
                     <li><a href="food.html">Food</a></li>
                     <li><a href="clothing.html">Clothing</a></li>
@@ -28,28 +41,46 @@
             </div>
         </nav>
     </header>
+    <main>
+        <div class="page_container">
+            <h1 id="main">Contact Me</h1>
+            <div class="container">
+                <div class="flip-card">
+                    <a class="card" href="#">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/about-us-picture.jpg" alt="Morgan Headshot Photo" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Morgan Miller</h1>
+                                <p>University of Michigan - Ann Arbor - School of Information</p>
+                                <p>Majoring in Information Science and User Experience Design</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
 
-    <div class="form-box">
-        <p>As you have navigated through this website, I would love to hear your opinions on Chicago in Color. I'm always open to connecting with new people and learning more about their opinions, so feel free to contact me using the form below! Leave any
-            comments, questions, or concerns! If you fill out the form, I will receive an email with your name, email, phone number and anything you want to talk about. This form is powered by formspree.io which is a site that allows users to host the
-            output to their forms there.
-        </p>
-        <br>
-        <form action="https://formspree.io/f/xqkwvvje" method="POST">
-            <legend>Feedback Form</legend>
-            <label for="name_id">Name</label>
-            <input type="text" id="fname" name="fullname" placeholder="Jane Doe">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="janedoe@umich.edu">
-            <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="phone_num" placeholder="999-999-9999">
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Hi Morgan, ..." style="height:200px"></textarea>
-            <!-- <input type="submit" value="Submit"> -->
-            <button class="button" type="submit">Submit</button>
-        </form>
-    </div>
+                <div class="form-box">
+                    <p>As you have navigated through this website, I would love to hear your opinions on Chicago in Color. I'm always open to connecting with new people and learning more about their opinions, so feel free to contact me using the form below!
+                        Leave any comments, questions, or concerns! If you fill out the form, I will receive an email with your name, email, phone number and anything you want to talk about. This form is powered by formspree.io which is a site that allows
+                        users to host the output to their forms there.
+                    </p>
+                    <br>
+                    <form action="https://formspree.io/f/xqkwvvje" method="POST">
+                        <legend>Feedback Form</legend>
+                        <label for="name_id">Name</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Jane Doe">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="janedoe@umich.edu">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone_num" placeholder="999-999-9999">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Hi Morgan, ..." style="height:200px"></textarea>
+                        <!-- <input type="submit" value="Submit"> -->
+                        <button class="button" type="submit">Submit</button>
+                    </form>
+                </div>
     </main>
     <br>
     <footer>

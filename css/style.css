@@ -1,138 +1,88 @@
-body {
-    margin: 0;
-    background-color: #000000;
-    font-family: 'Zen Antique Soft', serif;
-    padding: 0;
-}
-
-.container,
-.container1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 98%;
-    margin: auto;
-}
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16
-}
-
-input[type=submit] {
-    background-color: #1C567D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-input {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: content-box;
-}
-
-header {
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 1;
-    padding: 50px;
-    text-align: center;
-    background-image: url("../images/chicago-1.jpg");
-    background-attachment: fixed;
-    /* Parallax effect */
-    background-repeat: no-repeat;
-    background-position: center;
-    /* Parallax effect */
-    background-size: cover;
-    /* Parallax effect */
-    color: #000000;
-}
-
-#subject {
-    height: 20rem;
-}
-
-input[type=submit]:hover {
-    background-color: #9e6443;
-}
-
-footer {
-    padding-top: 15vh;
-    text-align: center;
-}
-
-
-/* * {
-                box-sizing: border-box;
+            /*Basic Styling*/
+            
+            body {
+                margin: 0px;
                 padding: 0;
-                margin: 0;
-                font-family: 'Exo', serif;
+                box-sizing: border-box;
+                font-size: 20pt;
+                font-family: 'Comic Sans', 'Arial', sans-serif;
+                background-color: rgb(255, 255, 255);
             }
             
-
+            header {
+                background: rgb(0, 0, 0);
+                display: flex;
+                flex-direction: column;
+                align-items: right;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto auto auto;
+                grid-row-gap: 20px;
+                justify-content: center;
+                align-content: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+            
+            .clothing_text,
+            .clothing_pic {
+                grid-column: 1 / span 2;
+                overflow: hidden;
+                max-height: 900px;
+            }
+            
+            .clothing_text {
+                background: rgba(160, 159, 156, 0.548);
+                border: 8px solid black;
+                text-align: center;
+            }
+            
+            .food_text {
+                background: rgba(115, 190, 112, 0.918);
+                border: 8px solid black;
+                text-align: center;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            
+            .food-header {
+                grid-column: 1 / -1;
+                padding-bottom: 20px;
+            }
+            
+            .survey-header {
+                grid-column: 1 / -1;
+            }
+            
+            h1 {
+                font-size: 30px;
+                line-height: 1;
+                padding-top: 10px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            
+            p {
+                padding-left: 10px;
+            }
+            
+            nav {
+                text-align: right;
+            }
+            
             .navbar {
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
                 background-color: #000000;
-            }
-            
-            
-           
-            
-         
-            
-            .parallax {
-                background-image: url("http://static1.squarespace.com/static/55314042e4b048e6fa97b3dc/557842a6e4b069d890f5fa67/5f048ae48c4c7759693fac36/1599095338448/Q3+-+Black-Owned+Business+IG+Template.png?format=1500w");
-                padding-top: 20px;
-                min-height: 100px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            
-            .buttons {
-                padding: 10px;
-            }
-            
-            .buttons button.play:before {
-                content: "\f144";
-            }
-            
-            .buttons button.pause:before {
-                content: "\f28b";
-            }
-            
-            .buttons button {
-                background: none;
-                border: 0;
-                outline: 0;
-                cursor: pointer;
-            }
-            
-            .buttons button:before {
-                content: '\f144';
-                font-family: 'Font Awesome 5 Free';
-                width: 30px;
-                height: 30px;
-                display: inline;
-                font-size: 28px;
-                color: #ffffff;
             }
             
             .links ul {
@@ -169,36 +119,44 @@ footer {
                 text-decoration: overline;
             }
             
-            h1 {
-                font-size: 30px;
-                padding-top: 10px;
-                text-align: center;
-            }
-            
-            p,
-            h2 {
-                padding-left: 10px;
-            }
-            
             footer {
+                text-align: center;
                 border: 2px solid black;
                 margin: 20px 0;
                 margin-top: auto;
             }
             
-            .text-left {
-                justify-content: flex-end;
-            }
-            
-            .section {
-                width: 100%;
-            }
-            
-            .container {
-                width: 80%;
-                display: flex;
+            .button {
                 margin: auto;
-                padding-top: 20px;
+                width: 50%;
+                background-color: #5986a0;
+                padding: 14px 28px;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 8px;
+                justify-content: center;
+                box-shadow: 0 4px 4px;
+                text-decoration: none;
+                color: #ffffff;
+            }
+            
+            @keyframes fade {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            /*Navigation and the nav element*/
+            
+            #Chicagoincolor,
+            #origin,
+            #food,
+            #clothing,
+            #contact {
+                text-decoration: underline;
+                font-weight: bold;
             }
             
             .navbar-links {
@@ -215,21 +173,108 @@ footer {
                 width: 100%;
             }
             
+            .navbar {
+                grid-column: 1 / -1;
+            }
+            
             .grid {
                 display: grid;
                 grid-template-columns: 1fr 2fr;
             }
+            /*Buttons for home page*/
+            
+            .buttons {
+                padding: 10px;
+            }
+            
+            .buttons button.play:before {
+                content: "\f144";
+            }
+            
+            .buttons button.pause:before {
+                content: "\f28b";
+            }
+            /*Skip to main content*/
+            
+            .skip a {
+                background: white;
+                left: 0;
+                padding: 5px;
+                -webkit-transition: top 1s ease-out;
+                transition: top 1s ease-out;
+                z-index: 1;
+                position: absolute;
+                top: -50px;
+            }
+            
+            .skip a:focus {
+                position: absolute;
+                top: 0px;
+            }
+            /*Survey Form Styling*/
+            
+            .container .flip-card,
+            .container .form_container {
+                grid-column: 1 / span 2;
+                place-self: center;
+            }
+            
+            input[type=text],
+            select,
+            textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid rgb(172, 171, 171);
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            
+            input[type=submit] {
+                background-color: #000000;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            
+            .contact_container {
+                border-radius: 5px;
+                background-color: #a4b0c2cc;
+                padding: 20px;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 10px;
+            }
+            
+            .contact-text {
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-bottom: 30px;
+            }
+            /*Flip Card Styling*/
             
             .flip-card {
                 background-color: transparent;
                 width: 200px;
                 height: 160px;
+                border: 1px solid #f3efef;
+                perspective: 1000px;
                 border-radius: 10px;
                 margin-top: 30px;
                 grid-row: 2 /3;
             }
             
             .flip-card-inner {
+                /* display: flex;
+                position: relative; */
                 width: 100%;
                 height: 100%;
                 text-align: center;
@@ -240,90 +285,46 @@ footer {
             
             .flip-card:hover .flip-card-inner,
             .flip-card:focus-within .flip-card-inner,
-            .flip-card:active .flip-card-inner,
             .flip-card:focus .flip-card-inner {
                 transform: rotateY(180deg);
             }
             
             .flip-card-front,
             .flip-card-back {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 -webkit-backface-visibility: hidden;
+                /* Safari */
                 backface-visibility: hidden;
-                border-radius: 10px;
             }
             
             .flip-card-front {
                 border-radius: 10px;
+                background-color: rgb(0, 0, 0);
             }
             
             .flip-card-back {
-                color: #000000;
-                transform: rotateY(180deg);
+                background-color: #ffffffcc;
+                color: rgb(0, 0, 0);
                 border-radius: 10px;
+                transform: rotateY(180deg);
+            }
+            /* .flip-card-back p {
+                font-size: 1.5rem;
             }
             
-            .navbar {
-                grid-column: 1 / -1;
-            }
+            .flip-card-back h1 {
+                font-size: 2rem;
+            } */
+            /*Responsive Design*/
+            /* Reduced Motion Query*/
             
-            @media screen and (min-width: 750px) {
-                .grid {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                }
-                .navbar {
-                    grid-column: 1 / -1;
-                }
-                .projects-header {
-                    grid-column: 1 / -1;
-                    padding-bottom: 20px;
-                }
-                .navbar {
-                    flex-direction: row;
-                    justify-content: space-between;
-                    background-color: #000000;
-                }
-                .nav_links {
-                    display: flex;
-                    flex-wrap: wrap;
-                    flex-direction: row;
-                    justify-content: space-between;
-                }
-                .links ul {
-                    flex-direction: row;
-                    font-size: 20px;
-                }
-                .container {
-                    width: 90%;
-                    display: flex;
-                    margin: auto;
-                    padding-top: 20px;
-                }
-                h1 {
-                    font-size: 40px;
-                    padding-top: 10px;
-                    text-align: center;
-                }
-                h2 {
-                    font-size: 18px;
-                }
-                p {
-                    font-size: 18px;
-                }
-            }
-            
-            @media screen and (prefers-reduced-motion: reduce) {
+            @media screen and (prefers-reduced-motion) {
                 .logo {
                     animation: none;
                 }
-                .parallax {
-                    background-image: url(../images/chicago-2.jpg);
-                    background-attachment: scroll !important;
-                    background-position: center !important;
-                    background-repeat: no-repeat !important;
-                    background-size: cover !important;
-                }
-            } */
+            }
